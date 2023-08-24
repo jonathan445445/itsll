@@ -1,0 +1,353 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>RESERVEPLUSIVOIRE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Nunito:ital,wght@1,200&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Nav -->
+		<nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-light px-lg-3 py-lg-2 shadow-sm sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand me-5 fw-bold fs-3 h-font" href="index.html">RESERVEPLUSIVOIRE</a>
+
+    <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">accueil</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Service
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="residence.html">Location de residences meublés</a></li>
+            <li><a class="dropdown-item" href="#">Location de vehicules</a></li>
+            <li><a class="dropdown-item" href="#">Achat</a></li>
+            <li><a class="dropdown-item" href="#">Vente</a></li>
+            <li><a class="dropdown-item" href="#">Livraison</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link me-2" href="contact.html">Contactez-nous</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link me-2" href="propos.html">À propos de nous</a>
+        </li>
+        
+      </ul>
+
+      <div class="d-flex" role="search">
+        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#loginModel">Login</button>
+        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#registerModel">Register</button>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<div class="modal fade" id="loginModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    	<form>
+    		<div class="modal-header">
+        	<h5 class="modal-title d-flex align-items-center">
+        	<i class="bi bi-person-circle fs-3 me-2">Utilisateur</i>
+        	</h5>
+        	<button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+      		</div>
+      		<div class="modal-body">
+        	<div class="mb-3">
+    			<label class="form-label">Adresse e-mail</label>
+    			<input type="email" class="form-control shadow-none">
+  			  </div>
+  			<div class="mb-4">
+    			<label class="form-label">Mot de passe</label>
+    			<input type="password" class="form-control shadow-none">
+  			</div>
+  			<div class="d-flex align-items-center justify-content-between mb-2">
+  				<button type="submit" class="btn btn-dark shadow-none">LOGIN</button>
+  				<a href="JavaScript: void(0)" class="text-secondary text-decoration-none" >Mot de passe oublié</a>
+  			</div>
+      		</div>
+      		<div class="modal-footer">
+        	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        	<button type="button" class="btn btn-primary">Connecter</button>
+      		</div>
+    	</form>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="modal fade" id="registerModel" tabindex="-1" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+
+			<div class="modal-header">
+          		<h5 class="modal-title d-flex align-items-center"> 
+          			<i class="bi bi-person-lines-fill fs-3 me-2">ENREGISTREMENT DE L'UTILISATEUR</i>
+          		</h5>
+      	 		<button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+    		</div>
+
+            <div class="modal-body">
+                
+                <div style="max-width:100%;">
+
+                    <div style="width:100%">
+
+                        <div class="row">
+                            <div class="form-group col">
+                                <label for="code_cli">Prenom</label>
+                                <input class="form-control" type="text" id="code_cli">
+                            </div>
+
+                            <div class="form-group col">
+                                <label for="nom_cli">Nom</label>
+                                <input class="form-control" type="text" id="nom_cli">
+                                <small id="VerifNomCli" style="display:none;" class="text-danger">veuillez saisir le nom du client</small>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col">
+                                <label for="code_cli">Code postal</label>
+                                <input class="form-control" type="text" id="code_cli">
+                            </div>
+
+                            <div class="form-group col">
+                                <label for="nom_cli">Pays/Région</label>
+                                <input class="form-control" type="text" id="nom_cli">
+                                <small id="VerifNomCli" style="display:none;" class="text-danger">veuillez saisir le nom du client</small>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col">
+                                <label for="code_cli">Adresse</label>
+                                <input class="form-control" type="text" id="code_cli">
+                            </div>
+
+                            <div class="form-group col">
+                                <label for="nom_cli">Email</label>
+                                <input class="form-control" type="text" id="nom_cli">
+                                <small id="VerifNomCli" style="display:none;" class="text-danger">veuillez saisir le nom du client</small>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col">
+                                <label for="code_cli">Mot de passe</label>
+                                <input class="form-control" type="text" id="code_cli">
+                            </div>
+
+                            <div class="form-group col">
+                                <label for="nom_cli">Confirmer Le Mot De Passe</label>
+                                <input class="form-control" type="text" id="nom_cli">
+                                <small id="VerifNomCli" style="display:none;" class="text-danger">veuillez saisir le nom du client</small>
+                            </div>
+                        </div>
+
+                        <div class="text-center my-1">
+	      					<button type="submit" class="btn btn-dark shadow-none">Enregistrer</button>
+	      				</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" id="btnclose" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                <button type="button" id="btnsave" name="registerbtn" class="btn btn-success">Ajouter</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+		<div class="my-5 px-4">
+		  <h2 class="fw-bold h-font text-center">PARLE DE NOUS</h2>
+
+		  <div class="h-line bg-dark"></div>
+		  <p class="text-center mt-3">
+		    Nous nous engageons à cultiver une communauté mondiale empathique où le commerce, les réservations, les livraisons, l'innovation et la fidélité à la marque prospèrent grâce à l'inclusion et à la diversité.Le caractère d'une ville de classe mondiale comprend de nombreuses ethnies, lieux d'origine, intérêts et visions du monde. Comme RESERVEPLUSIVOIRE opère dans des villes de la Côte d'Ivoire, nous reconnaissons l'importance de construire une culture interne et externe forte qui favorise les opportunités d'engagement et de soutien à travers les lignes culturelles.
+
+		    <!--
+				Marché local de confiance où les consommateurs se rendent pour acheter des services et des expériences qui rendent la vie plus intéressante et offrent une valeur illimitée.
+			-->
+		    
+		  </p>
+		</div>
+
+		<div class="container">
+		  <div class="row justify-content-between align-items-center">
+		    <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
+		      <h3 class="mb-3">PARTENARIAT</h3>
+		      <p>
+		        Des partenariats solides sont au cœur même de RESERVEPLUSIVOIRE. Ces partenariats nous permettent d'offrir les meilleures expériences et valeurs à nos clients, qu'ils soient à la recherche de nouvelles choses à essayer, goûter, apprendre ou faire. Et, en connectant nos clients avec nos partenaires marchands, nous créons des relations entre des clients fidèles et réguliers et des entreprises locales de qualité qui aident les communautés à prospérer.
+		      </p>
+		    </div>
+		    <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
+		      <img src="images/partenariat2.jpg" class="w-100">
+		    </div>
+		  </div>
+		</div>
+
+		<div class="container mt-5">
+		  <div class="row">
+		    <div class="col-lg-3 col-md-6 mb-4 px-4">
+		      <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
+		        <img src="images/about/hotel.svg" width="70px">
+		        <h4 class="mt-3">100+ RESIDENCES MEUBLES</h4>
+		      </div>
+		    </div>
+
+		    <div class="col-lg-3 col-md-6 mb-4 px-4">
+		      <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
+		        <img src="images/about/customers.svg" width="70px">
+		        <h4 class="mt-3">200+ CLIENTS</h4>
+		      </div>
+		    </div>
+
+		    <div class="col-lg-3 col-md-6 mb-4 px-4">
+		      <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
+		        <img src="images/about/rating.svg" width="70px">
+		        <h4 class="mt-3">150+ COMMENTAIRE</h4>
+		      </div>
+		    </div>
+
+		    <div class="col-lg-3 col-md-6 mb-4 px-4">
+		      <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
+		        <img src="images/about/staff.svg" width="70px">
+		        <h4 class="mt-3">50+ PERSONNELS</h4>
+		      </div>
+		    </div>
+		  
+		  </div>
+		</div>
+
+		<h3 class="my-5 fw-bold h-font text-center">MANAGEMENT TEAM</h3>
+
+		<div class="container px-4">
+		   <div class="swiper mySwiper">
+		      <div class="swiper-wrapper mb-5">
+		        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+		          <img src="images/about/about.jpg" class="w-100">
+		          <h5 class="mt-2">Random Name</h5>
+		        </div>
+		        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+		          <img src="images/about/about.jpg" class="w-100">
+		          <h5 class="mt-2">Random Name</h5>
+		        </div>
+		        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+		          <img src="images/about/about.jpg" class="w-100">
+		          <h5 class="mt-2">Random Name</h5>
+		        </div>
+		        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+		          <img src="images/about/about.jpg" class="w-100">
+		          <h5 class="mt-2">Random Name</h5>
+		        </div>
+		        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+		          <img src="images/about/about.jpg" class="w-100">
+		          <h5 class="mt-2">Random Name</h5>
+		        </div>
+		        
+		        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+		          <img src="images/about/about.jpg" class="w-100">
+		          <h5 class="mt-2">Random Name</h5>
+		        </div>
+		        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+		          <img src="images/about/about.jpg" class="w-100">
+		          <h5 class="mt-2">Random Name</h5>
+		        </div>
+		      </div>
+		      <div class="swiper-pagination"></div>
+		    </div>
+		</div>
+		<!-- Footer -->
+		<footer id="footer">
+	<div class="inner">
+		<div class="content">
+			<section>
+				<h3>NOS LOCALITES</h3>
+				<p>ABIDJAN - DALOA - YAMOUSSOUKRO - BOUAKE - KOROGHO - ISSIA .</p>
+			</section>
+			<section>
+				<h4><a href="#">reserveplusivoire.com</a></h4>
+				<ul class="alt">
+					<li><a href="#">A propos de nous.</a></li>
+					<li><a href="#">FAQ.</a></li>
+					<li><a href="#">Contact.</a></li>
+					<li><a href="#">Conditions Générales de vente.</a></li>
+					<li><a href="#">Mentions légales.</a></li>
+				</ul>
+			</section>
+			<section>
+				<h4>REJOIGNEZ-NOUS !</h4>
+				<ul class="plain">
+					<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+					<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+					<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+				</ul>
+			</section>
+		</div>
+	</div>
+</footer>
+
+<div id="copyright " class="copyright">
+	Design by <a href="https://templated.co/">JONATHAN</a>.
+</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+			<!-- Swiper JS -->
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>RESERVEPLUSIVOIRE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Nunito:ital,wght@1,200&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Nav -->
+		<nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-light px-lg-3 py-lg-2 shadow-sm sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand me-5 fw-bold fs-3 h-font" href="index.html">RESERVEPLUSIVOIRE</a>
+
+    <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">accueil</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Service
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="residence.html">Location de residences meublés</a></li>
+            <li><a class="dropdown-item" href="#">Location de vehicules</a></li>
+            <li><a class="dropdown-item" href="#">Achat</a></li>
+            <li><a class="dropdown-item" href="#">Vente</a></li>
+            <li><a class="dropdown-item" href="#">Livraison</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link me-2" href="contact.html">Contactez-nous</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link me-2" href="propos.html">À propos de nous</a>
+        </li>
+        
+      </ul>
+
+      <div class="d-flex" role="search">
+        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#loginModel">Login</button>
+        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#registerModel">Register</button>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<div class="modal fade" id="loginModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    	<form>
+    		<div class="modal-header">
+        	<h5 class="modal-title d-flex align-items-center">
+        	<i class="bi bi-person-circle fs-3 me-2">Utilisateur</i>
+        	</h5>
+        	<button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+      		</div>
+      		<div class="modal-body">
+        	<div class="mb-3">
+    			<label class="form-label">Adresse e-mail</label>
+    			<input type="email" class="form-control shadow-none">
+  			  </div>
+  			<div class="mb-4">
+    			<label class="form-label">Mot de passe</label>
+    			<input type="password" class="form-control shadow-none">
+  			</div>
+  			<div class="d-flex align-items-center justify-content-between mb-2">
+  				<button type="submit" class="btn btn-dark shadow-none">LOGIN</button>
+  				<a href="JavaScript: void(0)" class="text-secondary text-decoration-none" >Mot de passe oublié</a>
+  			</div>
+      		</div>
+      		<div class="modal-footer">
+        	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        	<button type="button" class="btn btn-primary">Connecter</button>
+      		</div>
+    	</form>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="modal fade" id="registerModel" tabindex="-1" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+
+			<div class="modal-header">
+          		<h5 class="modal-title d-flex align-items-center"> 
+          			<i class="bi bi-person-lines-fill fs-3 me-2">ENREGISTREMENT DE L'UTILISATEUR</i>
+          		</h5>
+      	 		<button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+    		</div>
+
+            <div class="modal-body">
+                
+                <div style="max-width:100%;">
+
+                    <div style="width:100%">
+
+                        <div class="row">
+                            <div class="form-group col">
+                                <label for="code_cli">Prenom</label>
+                                <input class="form-control" type="text" id="code_cli">
+                            </div>
+
+                            <div class="form-group col">
+                                <label for="nom_cli">Nom</label>
+                                <input class="form-control" type="text" id="nom_cli">
+                                <small id="VerifNomCli" style="display:none;" class="text-danger">veuillez saisir le nom du client</small>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col">
+                                <label for="code_cli">Code postal</label>
+                                <input class="form-control" type="text" id="code_cli">
+                            </div>
+
+                            <div class="form-group col">
+                                <label for="nom_cli">Pays/Région</label>
+                                <input class="form-control" type="text" id="nom_cli">
+                                <small id="VerifNomCli" style="display:none;" class="text-danger">veuillez saisir le nom du client</small>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col">
+                                <label for="code_cli">Adresse</label>
+                                <input class="form-control" type="text" id="code_cli">
+                            </div>
+
+                            <div class="form-group col">
+                                <label for="nom_cli">Email</label>
+                                <input class="form-control" type="text" id="nom_cli">
+                                <small id="VerifNomCli" style="display:none;" class="text-danger">veuillez saisir le nom du client</small>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col">
+                                <label for="code_cli">Mot de passe</label>
+                                <input class="form-control" type="text" id="code_cli">
+                            </div>
+
+                            <div class="form-group col">
+                                <label for="nom_cli">Confirmer Le Mot De Passe</label>
+                                <input class="form-control" type="text" id="nom_cli">
+                                <small id="VerifNomCli" style="display:none;" class="text-danger">veuillez saisir le nom du client</small>
+                            </div>
+                        </div>
+
+                        <div class="text-center my-1">
+	      					<button type="submit" class="btn btn-dark shadow-none">Enregistrer</button>
+	      				</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" id="btnclose" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                <button type="button" id="btnsave" name="registerbtn" class="btn btn-success">Ajouter</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+		<!-- Swiper Carousal-->
+		 <div class="container-fluid px-lg-4 mt-4">
+		 	 <div class="swiper swiper-container">
+		      <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+		          <img src="images/carousel/1.png" class="w-100 d-block" />
+		        </div>
+		        <div class="swiper-slide">
+		          <img src="images/carousel/2.png" class="w-100 d-block" />
+		        </div>
+		        <div class="swiper-slide">
+		          <img src="images/carousel/3.png" class="w-100 d-block" />
+		        </div>
+		        <div class="swiper-slide">
+		          <img src="images/carousel/4.png" class="w-100 d-block" />
+		        </div>
+		        <div class="swiper-slide">
+		          <img src="images/carousel/5.png" class="w-100 d-block" />
+		        </div>
+		        <div class="swiper-slide">
+		          <img src="images/carousel/6.png" class="w-100 d-block" />
+		        </div>
+		        
+		      </div>
+		      
+		    </div>	
+		 </div>
+
+		 <div class="my-5 px-4">
+			  <h2 class="fw-bold h-font text-center">NOS RESIDENCES</h2>
+
+			  <div class="h-line bg-dark"></div>
+			 
+			</div>
+
+			<div class="container">
+			  <div class="row">
+			   <div class="col-lg-3 col-md-12 mb-lg-0 mb-4 px-0">
+
+			     <nav class="navbar navbar-expand-lg navbar-light bg-white rounded shadow">
+			  <div class="container-fluid flex-lg-column align-items-stretch">
+			    <h4 class="mt-2">FILTRES</h4>
+
+			    <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#filterDropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+
+			    <div class="collapse navbar-collapse flex-column align-items-stretch mt-2" id="filterDropdown">
+			      <div class="border bg-light p-3 rounded mb-3">
+			        <h5 class="mb-3" style="font-size: 18px;">VOIR LES DISPONIBILITÉS</h5>
+			        <label class="form-label">Date dèbut</label>
+			        <input type="date" class="form-control shadow-none mb-3">
+			        <label class="form-label">Date fin</label>
+			        <input type="date" class="form-control shadow-none">
+			      </div>
+
+			      <div class="border bg-light p-3 rounded mb-3">
+			        <h5 class="mb-3" style="font-size: 18px;">NOMBRES DE PIECES</h5>
+			        <div class="mb-2">
+			          <input type="checkbox" id="f1" class="form-check-input shadow-none me-1">
+			          <input type="number" class="form-control shadow-none">
+			        </div>
+			      </div>
+			      
+			    </div>
+			  </div>
+			</nav>
+			</div>
+
+			<div class="col-lg-9 col-md-12 px-4">
+			  <div class="card mb-4 border-0 shadow">
+			  <div class="row g-0 p-3 align-items-center">
+			    <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">
+			      <img src="images/rooms/1.jpg" class="img-fluid rounded">
+			    </div>
+
+			    <div class="col-md-5 px-lg-3 px-md-3 px-0">
+			      <h5 class="mb-3">Nom de pièce simple</h5>
+			      <div class="features mb-4">
+			            <h6 class="mb-1">Caractéristiques</h6>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              2 Pièces
+			            </span>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              1 Salle de bains
+			            </span>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              1 Cuisine
+			            </span>
+			          </div>
+			          <div class="Facilities mb-3">
+			            <h6 class="mb-1">Installations</h6>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              Wifi
+			            </span>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              Netflix
+			            </span>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              Chauffe eau
+			            </span>
+			          </div>
+
+			          <div class="guests">
+			            <h6 class="mb-1">Nombre de personnes</h6>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              2 personnes
+			            </span>
+			          </div>  
+			    </div>
+
+			    <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
+			      <h6 class="mb-4">25 000 FCFA par nuit </h6>
+			      <a href="#" class="btn btn-sm w-100 btn-outline-primary shadow-none mb-2">Reservez</a>
+			      <a href="#" class="btn btn-sm w-100 btn-outline-dark shadow-none">Détails</a>
+			    </div>
+
+			  </div>
+			 </div>
+			 
+			<div class="card mb-4 border-0 shadow">
+			  <div class="row g-0 p-3 align-items-center">
+			    <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">
+			      <img src="images/rooms/1.jpg" class="img-fluid rounded">
+			    </div>
+			    
+			    <div class="col-md-5 px-lg-3 px-md-3 px-0">
+			      <h5 class="mb-3">Nom de pièce simple</h5>
+			      <div class="features mb-4">
+			            <h6 class="mb-1">Caractéristiques</h6>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              2 Pièces
+			            </span>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              1 Salle de bains
+			            </span>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              1 Cuisine
+			            </span>
+			          </div>
+			          <div class="Facilities mb-3">
+			            <h6 class="mb-1">Installations</h6>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              Wifi
+			            </span>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              Netflix
+			            </span>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              Chauffe eau
+			            </span>
+			          </div>
+
+			          <div class="guests">
+			            <h6 class="mb-1">Nombre de personnes</h6>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              2 personnes
+			            </span>
+			          </div>  
+			    </div>
+
+			    <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
+			      <h6 class="mb-4">25 000 FCFA par nuit </h6>
+			      <a href="#" class="btn btn-sm w-100 btn-outline-primary shadow-none mb-2">Reservez</a>
+			      <a href="#" class="btn btn-sm w-100 btn-outline-dark shadow-none">Détails</a>
+			    </div>
+
+			  </div>
+			 </div><div class="card mb-4 border-0 shadow">
+			  <div class="row g-0 p-3 align-items-center">
+			    <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">
+			      <img src="images/rooms/1.jpg" class="img-fluid rounded">
+			    </div>
+			    
+			    <div class="col-md-5 px-lg-3 px-md-3 px-0">
+			      <h5 class="mb-3">Nom de pièce simple</h5>
+			      <div class="features mb-4">
+			            <h6 class="mb-1">Caractéristiques</h6>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              2 Pièces
+			            </span>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              1 Salle de bains
+			            </span>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              1 Cuisine
+			            </span>
+			          </div>
+			          <div class="Facilities mb-3">
+			            <h6 class="mb-1">Installations</h6>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              Wifi
+			            </span>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              Netflix
+			            </span>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              Chauffe eau
+			            </span>
+			          </div>
+
+			          <div class="guests">
+			            <h6 class="mb-1">Nombre de personnes</h6>
+			            <span class="badge rounded-pill bg-light text-dark text-wrap">
+			              2 personnes
+			            </span>
+			          </div>  
+			    </div>
+
+			    <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
+			      <h6 class="mb-4">25 000 FCFA par nuit </h6>
+			      <a href="#" class="btn btn-sm w-100 btn-outline-primary shadow-none mb-2">Reservez</a>
+			      <a href="#" class="btn btn-sm w-100 btn-outline-dark shadow-none">Détails</a>
+			    </div>
+
+			  </div>
+			 </div>
+			</div>
+
+
+			  </div>
+			</div>
+
+
+		<!-- Footer -->
+		<footer id="footer">
+	<div class="inner">
+		<div class="content">
+			<section>
+				<h3>NOS LOCALITES</h3>
+				<p>ABIDJAN - DALOA - YAMOUSSOUKRO - BOUAKE - KOROGHO - ISSIA .</p>
+			</section>
+			<section>
+				<h4><a href="#">reserveplusivoire.com</a></h4>
+				<ul class="alt">
+					<li><a href="#">A propos de nous.</a></li>
+					<li><a href="#">FAQ.</a></li>
+					<li><a href="#">Contact.</a></li>
+					<li><a href="#">Conditions Générales de vente.</a></li>
+					<li><a href="#">Mentions légales.</a></li>
+				</ul>
+			</section>
+			<section>
+				<h4>REJOIGNEZ-NOUS !</h4>
+				<ul class="plain">
+					<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+					<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+					<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+				</ul>
+			</section>
+		</div>
+	</div>
+</footer>
+
+<div id="copyright " class="copyright">
+	Design by <a href="https://templated.co/">JONATHAN</a>.
+</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+			<!-- Swiper JS -->
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	</body>
+</html>
